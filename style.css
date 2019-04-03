@@ -42,7 +42,7 @@ html {
   /* Style the search box inside the navigation bar */
   #navbar input[type=text] {
     float: left;
-    padding: 8px;
+    padding: 10px;
     border: none;
     margin-top: 8px;
     margin-right: 16px;
@@ -101,10 +101,11 @@ border-bottom: 2px solid rgb(216, 211, 211);
     height: 220px;
     width: 280px;
     margin: 40px 80px;
-    background: red;
+    background: black;
     border: 1px solid black;
     text-align: center;
-    color: black;
+    color: white;
+    border-radius: 8px;
   }
 
   a.project.project-tile {
