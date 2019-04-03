@@ -85,12 +85,33 @@ html {
   .button:hover {
       text-decoration: none;
   }
+  
+.skills {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+.skills h1 {
+  padding: 22px;
+text-align: center;
+border-bottom: 2px solid rgb(216, 211, 211);
+}
+
+.about-me {
+  padding: 2rem;
+}
+  .about-me h1 {
+    padding: 22px;
+text-align: center;
+border-bottom: 2px solid rgb(216, 211, 211);
+}
 
   .project-tile h1 {
       padding: 22px;
 text-align: center;
 border-bottom: 2px solid rgb(216, 211, 211);
   }
+
 
   .project {
     text-decoration: none;
