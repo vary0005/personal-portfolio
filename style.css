@@ -4,17 +4,19 @@ html {
   }
   
 /* Add a black background color to the top navigation bar */
-.navigation {
+#navbar {
     overflow: hidden;
     background-color: black;
     color: white;
     position: fixed;
     width: 100%;
+    float: right;
+    text-align: right;
   }
   
   /* Style the links inside the navigation bar */
-  .navigation a {
-    float: left;
+  #navbar a {
+    float: right;
     display: block;
     color: white;
     text-align: center;
@@ -22,27 +24,30 @@ html {
     text-decoration: none;
     font-size: 17px;
   }
+#topnav-right {
+  float: right;
+}
   
   /* Change the color of links on hover */
-  .navigation a:hover {
-    background-color: #FFFFFF;
-    color: black;
+  #navbar a:hover {
+    background-color: #FF0000;
   }
   
   /* Style the "active" element to highlight the current page */
-  .navigation a.active {
-    background-color: #FF0000;
+  #navbar a.active {
     color: white;
+    float: left;
   }
   
   /* Style the search box inside the navigation bar */
-  .navigation input[type=text] {
-    float: right;
-    padding: 6px;
+  #navbar input[type=text] {
+    float: left;
+    padding: 8px;
     border: none;
     margin-top: 8px;
     margin-right: 16px;
-    font-size: 17px;
+    font-size: 15px;
+    margin-left: 12px;
   }
   
 #welcome-section {
@@ -97,9 +102,9 @@ border-bottom: 2px solid rgb(216, 211, 211);
     width: 280px;
     margin: 40px 80px;
     background: red;
-    border: 3px solid black;
+    border: 1px solid black;
     text-align: center;
-    color: white;
+    color: black;
   }
 
   a.project.project-tile {
@@ -108,6 +113,8 @@ border-bottom: 2px solid rgb(216, 211, 211);
   
   .project:hover {
      text-decoration: none;
+     box-shadow:5px 5px 3px grey;  
+     color: white;
   }
   .project-pic {
     width: 100%;
