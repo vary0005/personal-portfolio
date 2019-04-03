@@ -54,9 +54,7 @@ html * {
     font-size: 15px;
     margin-left: 12px;
   }
-  .me h1 {
-    overflow-x: show;
-  }
+ 
 
 #welcome-section {
     color: white;
