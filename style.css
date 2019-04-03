@@ -1,7 +1,8 @@
 html * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Palatino Linotype" !important;
+    font-family: "Times New Roman" !important;
+    overflow-x: hidden;
   }
   
   
