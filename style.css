@@ -1,8 +1,7 @@
 html * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Times New Roman" !important;
-    overflow-x: hidden;
+    font-family: "Palatino Linotype" !important;
   }
   
   
@@ -54,14 +53,23 @@ html * {
     font-size: 15px;
     margin-left: 12px;
   }
-  
+  .me h1 {
+    overflow-x: show;
+  }
+
 #welcome-section {
     color: white;
     background-color: black;
-    height: 900px;
     width: 100%;
     text-align: center;
     font-family: "Times New Roman";
+    display: block;
+    height: 100vh;
+}
+
+#welcome-section h1 {
+  vertical-align: center;
+  text-align: center;
 }
 
   .me{
@@ -154,7 +162,7 @@ border-bottom: 2px solid rgb(216, 211, 211);
     font-weight: bold;
   }
 
-  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+
   @media screen and (max-width: 600px) {
     .navigation a, .navigation input[type=text] {
       float: none;
@@ -168,3 +176,4 @@ border-bottom: 2px solid rgb(216, 211, 211);
       border: 1px solid #ccc;
     }
   }
+  
