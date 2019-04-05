@@ -2,11 +2,10 @@ html * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Times New Roman" !important;
-    overflow-x: hidden;
+ 
   }
   
   
-/* Add a black background color to the top navigation bar */
 #navbar {
     overflow: hidden;
     background-color: black;
@@ -16,8 +15,7 @@ html * {
     float: right;
     text-align: right;
   }
-  
-  /* Style the links inside the navigation bar */
+
   #navbar a {
     float: right;
     display: block;
@@ -32,19 +30,17 @@ html * {
 #topnav-right {
   float: right;
 }
-  
-  /* Change the color of links on hover */
+
   #navbar a:hover {
     background-color: #FF0000;
   }
   
-  /* Style the "active" element to highlight the current page */
+  
   #navbar a.active {
     color: white;
     float: left;
   }
   
-  /* Style the search box inside the navigation bar */
   #navbar input[type=text] {
     float: left;
     padding: 10px;
@@ -75,10 +71,6 @@ html * {
     top: 0;
     min-height: 55vh;
     padding-top: 45vh;
-    /*   line-height: 100vh; */
-    /*   width:100%;
-    height:96vh;
-  border:solid; */
   }
   
   .button {
@@ -99,19 +91,43 @@ html * {
       text-decoration: none;
   }
   
+.container {
+  list-style-position: inside;
+}
+
 .skills {
   background-color: black;
   color: white;
   padding: 2rem;
+  column-count: 4;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  margin-bottom: 3rem;
+  list-style-position: inside;
 }
 .skills h1 {
+  column-span: all;
   padding: 22px;
 text-align: center;
-border-bottom: 2px solid rgb(216, 211, 211);
+border-bottom: 1px solid rgb(216, 211, 211);
+font-size: 1.4rem;
+}
+
+.skills h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.skills .column2 {
+  padding-bottom: 2rem;
+}
+
+.skills .column3 {
+  padding-bottom: 3rem;
 }
 
 .about-me {
-  padding: 2rem;
+  padding: 1rem;
 }
   .about-me h1 {
     padding: 22px;
@@ -145,11 +161,15 @@ border-bottom: 2px solid rgb(216, 211, 211);
   a.project.project-tile {
       text-align: center;
   }
-  
+  .project {
+    box-shadow:5px 5px 3px grey;  
+  }
+
   .project:hover {
      text-decoration: none;
-     box-shadow:5px 5px 3px grey;  
      color: white;
+     transform: scale(1.1);
+     box-shadow:5px 5px 3px grey;
   }
   .project-pic {
     width: 100%;
@@ -161,8 +181,78 @@ border-bottom: 2px solid rgb(216, 211, 211);
     font-weight: bold;
   }
 
+  .contact {
+    padding-bottom: 150px;
+    background-color: black;
+  }
+  
+  .header {
+    padding: 160px 0 110px;
+    color: white;
+  }
+  .contact-details {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 35px 45px 35px;
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: black;
+    text-decoration: none;
+  }
 
-  @media screen and (max-width: 600px) {
+a.contact-details {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+a.contact-details:hover {
+  text-decoration: none;
+}
+div#contact.contact {
+  text-align: center;
+}
+  .contact h1 {
+    text-align: center;
+  }
+  .contact p {
+    text-align: center;
+  }
+
+  .contact-details:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px;
+  }
+  
+.footer {
+  height: 40px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: sticky;
+
+}
+.footer p {
+  text-align: center;
+}
+
+.footer a {
+  color: red;
+}
+
+.footer a:hover {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  @media screen and (max-width: 500px) {
     .navigation a, .navigation input[type=text] {
       float: none;
       display: block;
@@ -174,5 +264,26 @@ border-bottom: 2px solid rgb(216, 211, 211);
     .navigation input[type=text] {
       border: 1px solid #ccc;
     }
+    .skills {
+      background-color: black;
+      color: white;
+      padding: 2rem;
+      column-gap: 40px;
+      column-count: 1;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+      margin-bottom: 3rem;
+      list-style-position: inside;
+    }
+
+    .skills .column2 {
+      padding-bottom: 0rem;
+    }
+    
+    .skills .column3 {
+      padding-bottom: 0rem;
+    
+    
   }
   
+}
