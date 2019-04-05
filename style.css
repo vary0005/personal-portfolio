@@ -5,7 +5,7 @@ html * {
  
   }
   
-  
+  @media screen and (max-width: 1920px)  {
 #navbar {
     overflow: hidden;
     background-color: black;
@@ -134,6 +134,7 @@ font-size: 1.4rem;
     padding: 22px;
 text-align: center;
 border-bottom: 2px solid rgb(216, 211, 211);
+font-size: 3.5vw;
 }
 
 div.project-tile {
@@ -256,6 +257,13 @@ div#contact.contact {
   text-decoration: none;
   font-weight: bold;
 }
+}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
   @media screen and (max-width: 500px) {
     .navigation a, .navigation input[type=text] {
